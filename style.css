@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto",sans-serif;
+    background-color: black;
+    color:white;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 100%;
+    justify-content: center;
+    max-height: 100%;
+    }
+
+.img{
+    width:50px;
+    height: 40px;
+}
+
+
+main{
+    width: 1000px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin: 4rem auto;
+}
+
+
+.image{
+    width:400px;
+    max-width: 100%;
+    height: 600px;
+    max-height: 100%;
+    box-shadow:  2px 2px 2px #fff; 
+}
+nav{
+    position: sticky;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+ul li{
+    text-decoration: none;
+    color:white;
+    list-style-type: none;
+}
+ul li a:hover{
+    background-color: white;
+    color:#000;
+    padding: 1rem 2rem;
+    transition: background  ease-in 0.3s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    font-size: 4rem;
+}
+p{
+    font-style: italic;
+}
+.lm1{
+    margin-top: 5rem;
+    padding: 1rem 1rem;
+    position: relative;
+    margin-top: 20rem;
+    background-color: #000;
+    color: #fff;
+    
+}
+.lm1:hover{
+    background-color: white;
+    color:black;
+    border: black;
+    border: 2px solid #000;
+
+}
+.lm{
+    background-color: white;
+    color: black;
+    margin-top: 5rem;
+    padding: 1rem 1rem;
+    position: relative;
+    margin-top: 20rem;
+}
+
+.lm:hover{
+    background-color: #000;
+    color:white;
+    border: #fff;
+    border: 2px solid #fff;
+
+}
+
+.social {
+    padding: 3rem 0 0 0;
+    letter-spacing: 2rem;
+}
+
+.social a:hover{
+    font-size:2rem ;
+    transition: ease-in-out 0.3s;
+}
+
+.container2{
+    background-color: #fff;
+    color: #000;
+    padding: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.bcontainer{
+    background-color: #fff;
+    display: flex;
+    padding-top: 10rem;
+    justify-content:center ;
+    height: 1000px;
+    padding-left: 2rem;  
+}
+.container2 p{
+    font-size: 1rem;
+    width:500px;
+}
+
+.image-2{
+    width:650px;
+    height:500px;
+    border-top: 1px solid #000;
+}
+
+.ab{
+    font-style: normal
+}
+
+
+.contacts{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height:900px;
+    max-width: 100%;
+    width:700px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  .contacts p{
+      font-style: normal;
+      letter-spacing: 0.3rem;
+      width: 600px;
+  }
+  .contacts a{
+      color: greenyellow;
+  }
+
+ input[type=submit]{
+     background-color: #fff;
+     color: #000;
+     border:none;
+     padding: 1rem 2rem;
+     font-size:1rem ;
+ }
+ input[type=submit]:hover{
+     background-color: black;
+     color:#fff;
+     border: 1px solid #fff;
+ }
+
+.social-f{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+
+}
+ 
+.social-f a{
+    padding: 2rem;
+}
+.social-f a:hover{
+    font-size:2rem ;
+    transition: ease-in-out 0.3s;
+}
+
+.credits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.credits p{
+    align-items: center;
+    margin: 0;
+}
+h4{
+    margin: 0;
+}
+
+.footer{
+    background-color: rgb(167, 167, 167);
+    margin:0;
+    padding: 1rem;
+}
+
+.scrollFade {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .scrollFade--visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .scrollFade--animate {
+    transition: opacity 0.7s ease-in-out;
+  }
+  .overlay{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.to-top{
+ background-color: rgb(104, 104, 104);
+ position: fixed;
+ bottom: 16px;
+ right: 32px;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 32px;
+ color: white;
+ text-decoration: none;
+ border: none;
+ opacity: 0;
+ pointer-events: none;
+ transition: all 0.3s;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+.to-top.active{
+    background-color: rgb(222, 218, 218);
+    bottom: 32px;
+    opacity: 1;
+    pointer-events: auto;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+ 
+@media screen and (max-width:768px) {
+    main{
+        max-width:100%;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .bcontainer{
+        flex-direction: column;
+    }
+    .image-2{
+        width:400px;
+        height:300px;  
+    }
+
+    .container2 p{
+        font-size: 0.8rem;
+        width:300px
+    }
+    .contacts p{
+        font-size: 0.8rem;
+        width: 400px;
+
+    }
+    .contacts{
+        display: inline-block;
+        padding: 3rem;
+    }
+}
